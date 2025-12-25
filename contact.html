@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактная информация - Пушкин на Мойке</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+</head>
+<body class="page-wrapper">
+   
+        <header class="header">
+            <h1 class="header-title">Пушкин на Мойке</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link" title="Основная информация">Основная информация</a>
+                <a href="page2.html" class="nav-link" title="Музей на Мойке">Музей на Мойке</a>
+                <a href="page3.html" class="nav-link" title="Произведения написанные в квартире на Мойке">Произведения</a>
+                <a href="contact.html" class="nav-link active" title="Контактная информация">Контакты</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="contact-section">
+                <h2 class="section-title">Контактная информация</h2>
+                
+                <div class="form-container">
+                    <form class="contact-form" name="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Имя:</label>
+                            <input type="text" id="name" name="name" class="form-input" maxlength="50" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" name="email" class="form-input" maxlength="50" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category" class="form-label">Категория обращения:</label>
+                            <select id="category" name="category" class="form-select" required>
+                                <option value="">Выберите категорию</option>
+                                <option value="question">Вопрос</option>
+                                <option value="complaint">Жалоба</option>
+                                <option value="suggestion">Предложение</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedback" class="form-label">Отзыв:</label>
+                            <textarea id="feedback" name="feedback" class="form-textarea" rows="6" placeholder="Напишите ваш отзыв или сообщение..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Дополнительная информация</h3>
+                    <div class="contact-details">
+                        <p><strong>Адрес музея:</strong> наб. реки Мойки, 12, Санкт-Петербург</p>
+                        <p><strong>Телефон:</strong> +7 (812) 571-35-31</p>
+                        <p><strong>Email:</strong> info@muzpushkin.ru</p>
+                        <p><strong>Часы работы:</strong> 10:30 - 18:00 (касса до 17:00)</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-info">
+                <h2>Автор: Панфилов Артём</h2>
+                <h2>НГТУ им. Р.Е.Алексеева</h2>
+                <h2>Институт радиоэлектроники и информационных технологий</h2>
+            </div>
+            <article class="footer-contact">
+                <h2><a href="contact.html" class="contact-link" title="Перейти в раздел с контактной информацией">Контактная информация</a></h2>
+            </article>
+        </footer>
+    
+
+<script src="js/contact-form.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
